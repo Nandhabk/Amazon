@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="cucumber-java" tests="4" started="4" failures="0" errors="0" ignored="4">
+  <testsuite name="com.runner.TestRunner" time="0.0">
+    <testsuite name="Feature: Login Functionality" time="0.0">
+      <testsuite name="Scenario: To check whether login can be successfull with valid credentials" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given user enter valid username" classname="Scenario: To check whether login can be successfull with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And user enter valid password" classname="Scenario: To check whether login can be successfull with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="When user click on login" classname="Scenario: To check whether login can be successfull with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then Home screen should be displayed" classname="Scenario: To check whether login can be successfull with valid credentials" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

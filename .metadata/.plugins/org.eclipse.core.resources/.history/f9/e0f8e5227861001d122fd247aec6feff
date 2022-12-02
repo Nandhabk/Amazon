@@ -1,0 +1,21 @@
+package com.base.method;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.testng.annotations.BeforeSuite;
+
+public class Baseclass {
+	
+	public void loadPropertyFile() throws FileNotFoundException {
+		FileInputStream fir = new FileInputStream("config.properties");
+	}
+	
+	
+	
+@BeforeSuite
+public void launchBrowser() {
+	
+}
+
+}

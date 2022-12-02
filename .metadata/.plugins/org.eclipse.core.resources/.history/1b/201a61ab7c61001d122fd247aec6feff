@@ -1,0 +1,7 @@
+package com.TestCases;
+
+import com.base.method.Baseclass;
+
+public class Login extends Baseclass {
+
+}

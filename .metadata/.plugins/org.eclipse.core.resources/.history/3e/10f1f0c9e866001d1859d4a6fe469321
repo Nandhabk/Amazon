@@ -1,0 +1,13 @@
+package com.TestCases;
+
+import com.base.method.Baseclass;
+import com.pages.BookingPage;
+
+public class BookingTest extends Baseclass {
+
+	
+	public void BookingTestCase() {
+		
+		BookingPage.userName.sendKeys(properties.getProperty("Username"));
+	}
+}

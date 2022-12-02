@@ -1,0 +1,10 @@
+package com.selenium.prog1;
+
+public class UploadProg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

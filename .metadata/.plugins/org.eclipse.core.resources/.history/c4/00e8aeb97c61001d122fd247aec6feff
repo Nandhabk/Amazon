@@ -1,0 +1,17 @@
+package com.TestCases;
+
+import java.util.Properties;
+
+import com.base.method.Baseclass;
+import com.pages.LoginPage;
+
+public class Login extends Baseclass {
+	
+	@Test
+	
+	public void LoginMethod() {
+		
+		LoginPage.login.sendKeys(properties.get);
+	}
+
+}

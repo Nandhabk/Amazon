@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-17T07:02:20 IST" name="Default suite" finished-at="2022-11-17T07:02:42 IST" duration-ms="22529">
+    <groups>
+    </groups>
+    <test started-at="2022-11-17T07:02:20 IST" name="Default test" finished-at="2022-11-17T07:02:42 IST" duration-ms="22529">
+      <class name="com.testng.sele1.Scrolling">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.sele1.Scrolling@74fe5c40]" started-at="2022-11-17T07:02:20 IST" name="beforeMethod" finished-at="2022-11-17T07:02:26 IST" duration-ms="6085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:com.testng.sele1.Scrolling@74fe5c40]" started-at="2022-11-17T07:02:26 IST" name="f" finished-at="2022-11-17T07:02:42 IST" duration-ms="16382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.sele1.Scrolling@74fe5c40]" started-at="2022-11-17T07:02:42 IST" name="afterMethod" finished-at="2022-11-17T07:02:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testng.sele1.Scrolling -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

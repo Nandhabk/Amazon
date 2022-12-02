@@ -1,0 +1,9 @@
+Feature: Booking
+
+Scenario: Booking is successfull
+
+
+Given Enter <"Date">
+And Place
+When user click book
+Then Ticket should be booked
