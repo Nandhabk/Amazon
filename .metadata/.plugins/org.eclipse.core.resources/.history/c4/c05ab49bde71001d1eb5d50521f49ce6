@@ -1,0 +1,38 @@
+package stepDefinitions;
+
+import io.cucumber.java.PendingException;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Booking {
+	
+	@Given("^Enter Date$")
+	public void enter_Date() throws Throwable {
+		
+		System.out.println("HI");
+	   
+	}
+
+	@Given("^Place$")
+	public void place() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("HI");
+		throw new PendingException();
+	}
+
+	@When("^user click book$")
+	public void user_click_book() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("HI");
+		throw new PendingException();
+	}
+
+	@Then("^Ticket should be booked$")
+	public void ticket_should_be_booked() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("HI");
+throw new PendingException();
+	}
+
+}

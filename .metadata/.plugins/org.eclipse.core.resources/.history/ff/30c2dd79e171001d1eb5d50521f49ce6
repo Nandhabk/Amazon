@@ -1,0 +1,13 @@
+Feature: Booking
+
+Scenario Outline: Booking is successfull
+
+
+Given Enter "<Date>"
+And Place
+When user click book
+Then Ticket should be booked
+
+Examples:
+|Date1||"12/12/2022"|
+|Date2||"13/12/2022"|

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="cucumber-java" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.runner.TestRunner" time="0.337">
+    <testsuite name="Booking" time="0.337">
+      <testcase name="Booking is successfull #1" classname="Booking" time="0.33">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'Enter &lt;"Date"&gt;' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Enter &lt;{string}&gt;")
+public void enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Booking is successfull #2" classname="Booking" time="0.006">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'Enter &lt;"Date"&gt;' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("Enter &lt;{string}&gt;")
+public void enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

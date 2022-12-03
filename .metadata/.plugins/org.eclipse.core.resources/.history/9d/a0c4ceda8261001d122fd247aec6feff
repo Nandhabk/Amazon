@@ -1,0 +1,18 @@
+package com.commonActions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+import com.base.method.Baseclass;
+
+public class CommonActions extends Baseclass {
+	
+	public void click() {
+		
+		driver.findElement(By.xpath(path));
+	
+	}
+
+}
+
+}

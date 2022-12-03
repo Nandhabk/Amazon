@@ -1,0 +1,59 @@
+package com.testng.sele1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+
+public class Scrolling {
+	
+	public WebDriver driver;
+	
+	public  JavascriptExecutor js;
+	
+  @Test
+  
+  public void f() {
+	  
+	  driver.get("https://www.icicibank.com/Personal-Banking/account-deposit/iwish/index.page?ITM=nli_cms_iWish_sitecapture_Internet_Banking_openaniWishnowbtn");
+		
+		driver.manage().window().maximize();
+		
+		js = (JavascriptExecutor)driver;
+		
+		js.executeScript("window.scrollBy(0,500)", "");
+		
+		js.executeScript("window.scrollBy(0,-500)", "");
+		
+		
+	  
+	  
+	  
+	  
+	  
+  }
+  @BeforeMethod
+  
+  public void beforeMethod() {
+	  
+	  System.setProperty("webdriver.chrome.driver", "D:\\chromedriver106\\chromedriver.exe");
+		
+	  	driver = new ChromeDriver();
+		
+		driver.manage().deleteAllCookies();
+		
+		
+	  
+  }
+
+  @AfterMethod
+  
+  public void afterMethod() {
+	  
+	  
+	  
+  }
+
+}

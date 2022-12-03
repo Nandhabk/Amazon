@@ -1,0 +1,49 @@
+package com.testng.sele1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import java.io.File;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+
+public class DataDriven {
+	
+	public WebDriver driver;
+	
+	
+  @Test
+  
+  public void f() {
+	  
+	  File file = new File ("");
+	  
+  }
+  
+  @BeforeMethod
+  
+  public void beforeMethod() {
+	  
+	  System.setProperty("webdriver.chrome.driver", "D:\\chromedriver106\\chromedriver.exe");
+		
+		ChromeOptions opt = new ChromeOptions();
+		
+		opt.addArguments("--disable-notifications");
+		
+		 driver = new ChromeDriver(opt);
+	  
+	  
+  }
+
+  @AfterMethod
+  
+  public void afterMethod() {
+	  
+	  
+	  
+  }
+  
+  }

@@ -1,0 +1,62 @@
+package com.testng.sele1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import java.awt.datatransfer.StringSelection;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
+
+public class FileUpload {
+	
+	public WebDriver driver;
+	
+  @Test
+  
+  public void f() {
+	  
+	  WebElement browse_btn = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/input[1]"));  
+	  
+	  System.out.println(browse_btn.isDisplayed());
+	  
+	  Actions act = new Actions(driver);
+	  
+	  act.moveToElement(browse_btn).click().build().perform();
+	  
+	  //browse_btn.click();
+	  
+	  String file = "D:\\screenshotgoogle1.jpeg";
+	  
+	  StringSelection selector = new StringSelection(file);
+	  
+  }
+  @BeforeMethod
+  
+  public void beforeMethod() {
+	  
+	  System.setProperty("webdriver.chrome.driver", "D:\\chromedriver106\\chromedriver.exe");
+		
+		driver = new ChromeDriver();
+		
+		driver.manage().deleteAllCookies();
+		
+		driver.get("http://nervgh.github.io/pages/angular-file-upload/examples/simple/");
+		
+		driver.manage().window().maximize();
+	  
+  }
+
+  @AfterMethod
+  
+  public void afterMethod() {
+	  
+	  
+	  
+  }
+
+}

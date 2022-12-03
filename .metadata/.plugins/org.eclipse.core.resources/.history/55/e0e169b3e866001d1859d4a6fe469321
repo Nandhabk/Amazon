@@ -1,0 +1,10 @@
+package com.TestCases;
+
+public class BookingTest {
+
+	
+	public void BookingTestCase() {
+		
+		
+	}
+}

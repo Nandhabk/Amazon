@@ -1,0 +1,16 @@
+package com.runner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = "/Cucumber-project/Feature/"
+		,glue={"/Cucumber-project/src/test/java/step_definition/Login_stepdefinition.java"}
+		)
+
+public class TestRunner {
+
+}

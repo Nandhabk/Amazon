@@ -1,0 +1,38 @@
+package step_definition;
+
+import org.junit.Test;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Login_stepdefinition {
+	
+	
+	
+	@Given("user enter valid username")
+	public void user_enter_valid_username()  {
+	    System.out.println("UN");
+	 
+	}
+
+	@Given("^user enter valid password$")
+	public void user_enter_valid_password()  {
+		 System.out.println("PWD");
+	    
+	}
+
+	@When("^user click on login$")
+	public void user_click_on_login()  {
+		 System.out.println("login_btn");
+	   
+	}
+
+	@Then("^Home screen should be displayed$")
+	public void home_screen_should_be_displayed() {
+		 System.out.println("Home Screen");
+	   
+	}
+
+
+}

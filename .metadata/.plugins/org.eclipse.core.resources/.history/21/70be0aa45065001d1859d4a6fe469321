@@ -1,0 +1,72 @@
+package com.testng.sele1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import java.util.HashMap;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+
+public class DownLoadFile {
+	
+	public WebDriver driver;
+	
+	public ChromeOptions opt;
+	
+  @Test
+  
+  public void f() {
+	  
+	  	driver = new ChromeDriver(opt);
+		
+		driver.manage().deleteAllCookies();
+		
+		driver.get("https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/");
+		
+		driver.manage().window().maximize();
+	  
+	  WebElement downloadPDF = driver.findElement(By.xpath("/html/body/div[1]/main/section/div/div[2]/div/div/table/tbody/tr[1]/td[5]/a"));
+	  
+	  System.out.println(downloadPDF.isDisplayed());
+
+	  downloadPDF.click();
+	  
+  }
+  @BeforeMethod
+  
+  public void beforeMethod() {
+	  
+	  	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver106\\chromedriver.exe");
+		
+		 opt = new ChromeOptions();
+		
+		HashMap<String,Object> pref = new HashMap<String, Object>();
+		
+		pref.put("download.prompt_for_download", false);
+		
+		pref.put("plugnis.always_Open_pdf_externally", true);
+		
+		opt.setExperimentalOption("pref", pref);
+		
+		
+		
+		
+		
+		
+		
+	  
+  }
+
+  @AfterMethod
+  
+  public void afterMethod() {
+	  
+	  
+  }
+
+}

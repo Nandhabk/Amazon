@@ -1,0 +1,32 @@
+package stepDefinitions;
+
+import cucumber.api.PendingException;
+
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+
+
+public class CucumberMaven {
+	
+	@Given("^user enter valid username$")
+	public void user_enter_valid_username() {
+	   System.out.println("hi");
+	}
+	
+	@Given("user enter valid password")
+	public void user_enter_valid_password() {
+	   System.out.println("hi");
+	}
+	@When("user click on login")
+	public void user_enter_valid_password() {
+	   System.out.println("hi");
+	}
+	@Given("user enter valid password")
+	public void user_enter_valid_password1() {
+	   System.out.println("hi");
+	}
+	
+
+	
+}
